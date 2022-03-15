@@ -1,0 +1,27 @@
+.navegador{
+    background-color: lightgray;
+    text-decoration: none;
+}
+
+.lista-navegador{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.elementos-navegador{
+    display: inline-block;
+}
+
+.elementos-navegador a{
+    text-decoration: none;
+    color: black;
+}
+
+.elementos-navegador :hover{
+    background-color: grey;
+}
+
+.elementos-navegador a:hover{
+    color: white;
+}
