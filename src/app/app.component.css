@@ -16,6 +16,7 @@
 .elementos-navegador a{
     text-decoration: none;
     color: black;
+    padding: 20px;
 }
 
 .elementos-navegador :hover{
@@ -24,4 +25,8 @@
 
 .elementos-navegador a:hover{
     color: white;
+}
+
+.spacer {
+    flex: 1 1 auto;
 }

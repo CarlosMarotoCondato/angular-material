@@ -3,18 +3,33 @@
   <mat-toolbar class="navegador">
     <ul class="lista-navegador">
       <li class="elementos-navegador">
-        <a routerLink="inicio">Inicio</a>
+        <span matBadge="8" matBadgePosition="before" matBadgeColor="accent"><a routerLink="inicio">Inicio</a></span>
+        
       </li>
       <li class="elementos-navegador">
-        <a routerLink="list">Lista</a>
+        <a routerLink="formulario">Formulario</a>
       </li>
     </ul>
-</mat-toolbar>
+
+    <span class="spacer"></span>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+  </mat-toolbar>
 
 </header>
 
-<router-outlet></router-outlet>
-
 <main>
-  <app-cards></app-cards>
+  <router-outlet></router-outlet>
 </main>
+
+<footer>
+  <div class="container-fluid">
+
+  </div>
+</footer>
